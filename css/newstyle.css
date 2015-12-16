@@ -1,0 +1,383 @@
+/* css reset */
+@import url(https://fonts.googleapis.com/css?family=Amiri);
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: 'Amiri', serif;
+}
+@font-face {
+  font-family: Edwardian_Script;
+  src: url(../fonts/EdwardianScriptITC.ttf);
+}
+body {
+  width: 100%;
+  background: #a17ced;
+}
+header {
+  margin: 0 auto;
+}
+#shop {
+  width: 100%;
+  margin: 3em auto 2.5em;
+  text-align: center;
+}
+#logo {
+  display: inline-block;
+}
+#companyName {
+  display: inline-block;
+  text-align: left;
+}
+h1 {
+  margin-left: .2em;
+  font-family: Edwardian_Script, sans-serif;
+  font-size: 2.5em;
+  color: #5a0c0c;
+  line-height: .9em;
+}
+nav {
+  width: 100%;
+  margin: 0 ;
+}
+nav ul,
+footer {
+  text-align: center;
+  margin: 0 auto;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  background: #9d1515;
+  color: #eed14b;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin: 0 .6em;
+  padding: .1em 1em;
+  border: .1em solid #e1c674;
+}
+nav ul li a:hover {
+  background: #eed14b;
+  color: #9d1515;
+  border: 0.1em solid #9d1515;
+}
+.active {
+  background: #eed14b;
+  color: #9d1515;
+  border: 0.1em solid #9d1515;
+  cursor: default;
+}
+.active2 {
+  color: #eed14b;
+  cursor: default;
+}
+form {
+  margin: 0;
+  font-family: 'Amiri', serif;
+}
+#registerForm {
+  margin: 2em auto;
+  width: 45%;
+  background: #eed14b;
+  overflow: hidden;
+  color: #9d1515;
+}
+@media screen and (max-width: 800px) {
+  #registerForm {
+    width: 75%;
+  }
+}
+.formElements {
+  margin-top: 1.2em;
+}
+h3 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: 1em;
+}
+label {
+  font-size: 1.1em;
+  margin: .5em .15em .5em 12.5%;
+}
+input {
+  display: block;
+  margin: 0 auto;
+  width: 75%;
+  height: 2.8em;
+  padding-left: 1em;
+}
+input::-webkit-input-placeholder {
+  font-size: 1.2em;
+  color: #a17ced;
+}
+input:-moz-placeholder {
+  font-size: 1.2em;
+  color: #a17ced;
+}
+input[type=submit],
+input[type=reset] {
+  background: #9d1515;
+  margin: 1em auto 2em;
+  font-size: 1em;
+  color: #fff;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+input[type=submit]:hover {
+  background: #fff;
+  color: #9d1515;
+}
+input[type=reset] {
+  background: #a17ced;
+}
+input[type=reset]:hover {
+  background: #fff;
+  color: #9d1515;
+}
+footer {
+  margin-bottom: 2em;
+}
+footer h6 {
+  font-size: 1.3em;
+}
+footer p {
+  display: block;
+  font-size: 1.2em;
+  color: #111;
+}
+footer li {
+  list-style: none;
+  display: inline-block;
+}
+footer li a {
+  font-size: 1.4em;
+  font-style: italic;
+  margin-bottom: 1em;
+  color: #9d1515;
+  text-decoration: none;
+}
+footer li a:hover {
+  color: #eed14b;
+}
+footer li a::after {
+  content: " |";
+  margin: 0 1em 0 1.5em;
+  font-style: normal;
+  color: #eed14b;
+  display: inline-block;
+}
+footer li:last-child a::after {
+  content: "";
+}
+main h2 {
+  text-align: center;
+  font-size: 1.6em;
+}
+table {
+  margin: 0 auto 2em;
+  background: #eed14b;
+  width: 70%;
+}
+@media screen and (max-width: 800px) {
+  table {
+    width: 90%;
+  }
+}
+table h3 {
+  color: #9d1515;
+  font-size: 1.8em;
+  line-height: 1.5em;
+}
+table tr {
+  display: inline-block;
+  width: 43%;
+  margin: 1em 1em 1em 1.4em;
+  background-color: #f2dd7a;
+  border: 5px solid #a17ced;
+}
+table tr:nth-child(even) {
+  float: right;
+  margin-right: 1.4em;
+}
+@media screen and (max-width: 670px) {
+  table tr {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+  }
+  table tr:nth-child(even) {
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+table tr td {
+  width: 100%;
+  display: block;
+  padding: .2em 2em;
+  text-align: left;
+}
+table tr td p {
+  font-size: 1.3em;
+}
+table tr td img {
+  width: 100%;
+  height: auto;
+  margin-top: 1em;
+}
+table tr td a {
+  text-decoration: none;
+}
+table tr td input[type=button] {
+  margin: .5em 0 1em;
+  width: 100%;
+  border-radius: .5em;
+  font-size: 1.1em;
+  background-color: #814fe7;
+  color: #d9d9d9;
+}
+.detailsTable {
+  width: 50%;
+}
+@media screen and (max-width: 800px) {
+  .detailsTable {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 670px) {
+  .detailsTable {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+.detailsTable tr {
+  width: 90%;
+  line-height: 1em;
+}
+.cartTable {
+  width: 60%;
+}
+.cartTable tr {
+  display: block;
+  width: 80%;
+  line-height: 1em;
+  margin: 0 auto;
+}
+.cartTable tr P {
+  line-height: 1.2em;
+}
+@media screen and (max-width: 800px) {
+  .cartTable tr {
+    max-height: 20em;
+  }
+}
+@media screen and (max-width: 670px) {
+  .cartTable tr {
+    width: 100%;
+  }
+  .cartTable tr p {
+    line-height: 1.1em;
+  }
+}
+.cartTable tr td {
+  display: inline-block;
+}
+.cartTable tr td img {
+  width: 10%;
+  height: auto;
+  margin-top: 1em;
+}
+@media screen and (max-width: 670px) {
+  .cartTable tr td img {
+    width: 18%;
+  }
+}
+/*# sourceMappingURL=newstyle.css.map */
